@@ -6,6 +6,7 @@ const numbersEl = document.getElementById("numbers");
 const symbolsEl = document.getElementById("symbols");
 const generateEl = document.getElementById("generate");
 const clipboard = document.getElementById("clipboard");
+const successEl = document.getElementById("success");
 
 const randomFunc = {
   lower: getRandomLower,
@@ -27,7 +28,10 @@ clipboard.addEventListener("click", () => {
   textarea.select();
   document.execCommand("copy");
   textarea.remove();
-  alert("Password copied to clipboard");
+  successEl.style.opacity = "1";
+  setTimeout(() => {
+    successEl.style.opacity = "0";
+  }, 750);
 });
 
 generate.addEventListener("click", () => {

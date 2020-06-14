@@ -16,6 +16,7 @@ input[type="number"] {
   padding: 2px 4px;
   font-size: 18px;
   color: #f5f8f7;
+  border-radius: 5px;
 }
 
 .checkmark-container {
@@ -49,6 +50,7 @@ label {
   height: 25px;
   width: 25px;
   background-color: #959ea3;
+  border-radius: 5px;
 }
 
 /* On mouse-over, add a background color */
@@ -112,6 +114,7 @@ h1.gen-title {
   box-shadow: 0px 2px 13px rgba(255, 255, 255, 0.2);
   min-height: 500px;
   width: 25rem;
+  border-radius: 5px;
 }
 
 .output-container {
@@ -125,12 +128,26 @@ h1.gen-title {
   letter-spacing: 0.15rem;
   padding: 12px 10px;
   margin: 0.75rem 0;
+  border-radius: 5px;
 }
 
 .output-container #output {
   word-wrap: break-word;
   max-width: calc(100% - 40px);
   color: #f5f8f7;
+}
+
+#success {
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  background-color: #f3644b;
+  border-radius: 5px;
+  padding: 0.2rem;
+  color: #f5f8f7;
+  transition: ease-out;
+  transition-duration: 200ms;
+  opacity: 0;
 }
 
 .output-container .btn {
@@ -149,12 +166,14 @@ h1.gen-title {
   font-size: 18px;
   padding: 8px 12px;
   background-color: #f3644b;
+  border-radius: 5px;
 }
 
 .btn-large {
   display: block;
   width: 100%;
   box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.035);
+  border-radius: 5px;
 }
 
 .setting {
